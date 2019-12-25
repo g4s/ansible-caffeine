@@ -1,0 +1,13 @@
+---
+
+- name: install caffeine
+  block:
+    - homebrew_cask:
+        name: caffeine
+        state: present
+      when: ansible_os_family == 'Darwin'
+
+    - apt:
+        name: caffeine
+        state: present
+      when: ansible_os_family == 'Debian'

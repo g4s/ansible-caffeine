@@ -1,0 +1,42 @@
+---
+
+dependencies: ['g4s.homebrew']
+
+galaxy_info:
+  author: 'Gregor A. Segner'
+  description: 'ansible role for installing caffeine on Debian bassed systems and macOS'
+  company: ''
+  license: 'MIT'
+  min_ansible_version: '1.7.1'
+  platforms:
+    - name: Ubuntu
+      versions:
+        - precise
+        - trusty
+    - name: Debian
+      versions:
+        - wheezy
+        - jessie
+    - name: macOS
+      versions:
+        - 10.10
+        - 10.11
+        - 10.12
+        - 10.13
+        - 10.14
+  categories: [desktop]
+
+ansigenome_info:
+  galaxy_id: ''
+
+  travis: True
+
+  synopsis: |
+    Installation routine for caffeine - which prevents display sleep mode
+
+  usage: |
+    Simply fullfill the requirements/dependencies and add this role to your
+    playbook.
+
+  #custom: |
+  #  Any custom output you want after the usage section...
